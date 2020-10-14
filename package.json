@@ -1,15 +1,16 @@
 {
   "dependencies": {
+    "axios": "^0.20.0",
     "chokidar": "^3.4.3",
     "dayjs": "^1.9.3",
     "optimist": "^0.6.1",
     "pdfreader": "^1.2.6",
+    "qs": "^6.9.4",
     "ramda": "^0.27.1"
   },
   "scripts": {
-    "start": "node ./index.js",
-    "watch": "node watch.js",
-    "pkg": "xcopy .\\src\\*.* .\\node_modules\\src\\ /a /s /q /y && nexe -o ./dist/pdf -t win-x86-10.19.0 -b"
+    "start": "node ./src/index.js",  
+    "pkg": "nexe -o ./dist/pdf -t win-x86-10.19.0 -b --verbose"
   },
   "main": "src/index.js"
 }

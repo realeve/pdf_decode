@@ -2,8 +2,11 @@ const watch = require("./watch");
 const { loadFile } = require("./decode");
 const useage = `用法:
 pdf file -f [文件路径]
-pdf watch -d [监听目录] -c [缓存文件]
-pdf watch --dir [监听目录 默认为pdf ] --cache [缓存文件，默认为list.json]`;
+pdf -d [监听目录] -c [缓存文件]
+pdf --dir [监听目录 默认为pdf ] --cache [缓存文件，默认为list.json]
+
+[查看帮助]
+pdf -h`;
 
 const argv = require("optimist")
   .usage(useage)
