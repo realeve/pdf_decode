@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node ./index.js",
+    "watch": "node watch.js",
     "pkg": "pkg . --targets node10-win-x86 -o ./dist/pdf_decoder"
   },
   "bin": "./watch.js"
