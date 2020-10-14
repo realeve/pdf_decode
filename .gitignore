@@ -1,4 +1,5 @@
 node_modules
-pdf/*.pdf
+*.pdf
 *.exe
 dist/*.exe
+pdf/*.json
