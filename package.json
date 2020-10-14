@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node ./index.js",
     "watch": "node watch.js",
-    "pkg": "xcopy .\\src .\\node_modules\\src /a /s /q /y && nexe -o ./dist/pdf -t win-x86-10.19.0 -b -r ./src/"
+    "pkg": "xcopy .\\src\\*.* .\\node_modules\\src\\ /a /s /q /y && nexe -o ./dist/pdf -t win-x86-10.19.0 -b"
   },
   "main": "src/index.js"
 }
