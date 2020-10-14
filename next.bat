@@ -1,0 +1,1 @@
+nexe -i  .\watch.js -o ./dist/pdf -t win-x86-10.19.0 -b

@@ -1,2 +1,4 @@
 node_modules
 pdf/*.pdf
+*.exe
+dist/*.exe
