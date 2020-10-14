@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "chokidar": "^3.4.3",
+    "dayjs": "^1.9.3",
+    "optimist": "^0.6.1",
+    "pdfreader": "^1.2.6",
+    "ramda": "^0.27.1"
+  },
+  "scripts": {
+    "start": "node ./index.js",
+    "pkg": "pkg . --targets node10-win-x86 -o ./dist/pdf_decoder"
+  },
+  "bin": "./watch.js"
+}
