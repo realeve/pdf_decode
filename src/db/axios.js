@@ -25,7 +25,7 @@ let getTokenFromUrl = async () => {
 };
 
 let getToken = async () => {
-  let fileName = `${getMainContent()}/src/util/token.json`;
+  let fileName = `${getMainContent()}/src/db/token.json`;
   try {
     let token = fs.readFileSync(fileName, 'utf-8');
     if (token.length == 0) {
@@ -46,7 +46,7 @@ let getType = (data) =>
     .toLowerCase();
 
 const saveToken = (token) => {
-  let fileName = `${getMainContent()}/src/util/token.json`;
+  let fileName = `${getMainContent()}/src/db/token.json`;
   fs.writeFileSync(fileName, JSON.stringify({ token }));
 };
 

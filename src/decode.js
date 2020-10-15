@@ -8,7 +8,7 @@ const loadFile = (filename) => {
     if (!item) {
       let res = handleData(rows, filename);
       console.log("文件解析：", res);
-      db.addPaperPackage(res).catch((e) => {
+      db.addPaperPackage(res).catch((e) => { 
         console.error("数据写入失败");
       });
     } else if (item.text) {
