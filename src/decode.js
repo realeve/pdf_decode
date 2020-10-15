@@ -9,7 +9,8 @@ const loadFile = (filename) => {
       let res = handleData(rows, filename);
       console.log("文件解析：", res);
       db.addPaperPackage(res).catch((e) => { 
-        console.error("数据写入失败");
+        console.log(e)
+        console.error("数据写入失败1");
       });
     } else if (item.text) {
       (rows[item.y] = rows[item.y] || []).push(item.text);
